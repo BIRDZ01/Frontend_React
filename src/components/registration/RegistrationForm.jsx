@@ -1,12 +1,12 @@
 import React from 'react'
-import "./RegistrationForm.css"
+import "./registrationForm.css"
 
 const RegistrationForm = () => {
 
 
 
    return(
-      <div className="registerForm">
+      <div className="registrationForm">
          <form>
             <input
                type="text"
