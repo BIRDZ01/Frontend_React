@@ -1,6 +1,6 @@
 import './App.css';
-import './components/registration/registrationForm.css';
-import RegistrationForm from './components/registration/RegistrationForm';
+import './pages/registration/registrationForm.css';
+import RegistrationForm from './pages/registration/RegistrationForm';
 
 function App() {
   return (
