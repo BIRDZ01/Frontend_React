@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import "./registrationForm.css"
+import NameGenerator from '../../components/screenNameGenerator/NameGenerator';
 
 const RegistrationForm = () => {
 
@@ -20,6 +21,7 @@ const RegistrationForm = () => {
       <div className="registrationForm">
          <form onSubmit={handleSubmit}>
             <label htmlFor="sname">Random Screen Name</label>
+            < NameGenerator />
             <input
                type="text"
                id="sname"
