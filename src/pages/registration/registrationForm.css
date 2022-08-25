@@ -12,7 +12,7 @@ input[type=text],[type=number],[type=password] {
    box-sizing: border-box;
 }
 
-input[type=submit]{
+.submitLogIn{
    width: 100%;
    background-color: green;
    color: pink;
@@ -23,7 +23,7 @@ input[type=submit]{
    cursor: pointer;
 }
 
-input[type=submit]:hover {
+.submitLogIn:hover {
    background-color: pink;
    color: green;
 }

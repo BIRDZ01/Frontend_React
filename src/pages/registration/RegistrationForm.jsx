@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import "./registrationForm.css"
 import NameGenerator from '../../components/screenNameGenerator/NameGenerator';
 
-const RegistrationForm = () => {
+const RegistrationForm = (props) => {
 
    const [input, setInput] = useState("")
 
@@ -119,7 +119,7 @@ const RegistrationForm = () => {
                onChange={handleChange}
             />
 
-            <input type="submit"></input>
+            <button className={'submitLogIn'} onClick={props.onClick} ></button>
          </form>
       </div>
    )
