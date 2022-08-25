@@ -1,22 +1,28 @@
-import React, {useState} from 'react';
-import Post from "../../components/post/Post"
-import DailyCheckIn from "../../components/dailyCheckIn/DailyCheckIn"
-import "./OwnHomePage.css"
+import React from "react";
+import PostItem from "../../components/post/PostItem";
+import dummyPost from "../../components/post/DummyPost";
+import DailyCheckIn from "../../components/dailyCheckIn/DailyCheckIn";
+import "./OwnHomePage.css";
 
 const OwnHomePage = (props) => {
-const [profilePic,setProfilePic] = useState()
-return(
+  const postList = dummyPost.map((post) => (
+    <PostItem
+      id={post.id}
+      key={post.id}
+      date={post.date}
+      description={post.description}
+    />
+  ));
+  return (
     <div>
-    <button onClick={props.onClick} className="logout">log out</button>
-<img className="profile-pic" url={profilePic} alt="profile pic"></img>
-<DailyCheckIn />
-<Post />
-<Post />
-<Post />
-<Post />
+      <img className="profile-pic" alt="profile pic"></img>
+      <DailyCheckIn />
+      <button onClick={props.onClick} className="logout">
+        log out
+      </button>
+      <ul>{postList}</ul>
+    </div>
+  );
+};
 
-</div>
-)
-}
-
-export default OwnHomePage
+export default OwnHomePage;
