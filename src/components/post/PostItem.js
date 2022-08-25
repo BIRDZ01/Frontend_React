@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import PostForm from "./PostForm";
 import PostContext from "./Post-context";
 
 const PostItems = (props) => {
@@ -17,7 +16,7 @@ const PostItems = (props) => {
         <h3>{props.date}</h3>
         <div>{props.description}</div>
       </div>
-      <PostForm onAddPost={deletePostHandler} />
+      <button onClick={deletePostHandler}>delete</button>
     </li>
   );
 };

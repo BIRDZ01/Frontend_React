@@ -1,11 +1,11 @@
 import React from "react";
 import PostItem from "../../components/post/PostItem";
-import dummyPost from "../../components/post/DummyPost";
+import savedPost from "../../components/post/DummyPost";
 import DailyCheckIn from "../../components/dailyCheckIn/DailyCheckIn";
 import "./OwnHomePage.css";
 
 const OwnHomePage = (props) => {
-  const postList = dummyPost.map((post) => (
+  const postList = savedPost.map((post) => (
     <PostItem
       id={post.id}
       key={post.id}
