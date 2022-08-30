@@ -118,6 +118,14 @@ const RegistrationForm = (props) => {
                placeholder="Emergency Contact Phone Number"
                onChange={handleChange}
             />
+            <label htmlFor="ecnumber">Emergency Contact Email</label>
+            <input
+               type="text"
+               id="ecemail"
+               name="ecemail"
+               placeholder="Emergency Contact Email"
+               onChange={handleChange}
+            />
 
             <button className={'submitLogIn'} onClick={props.onClick} ></button>
          </form>
