@@ -1,7 +1,22 @@
 .logout {
   margin-left: 90%;
-  background-color: green;
+  background-color: red;
 }
 .profile-pic {
   margin-left: 90%;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+#profile-pic {
+  margin-left: 90%;
+  display: inline-block;
+  width: 5em;
+  height: 2em;
+  border-radius: 50%;
+
+  object-fit: cover;
 }
